@@ -39,4 +39,4 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: kaustu88/techtrends-main:latest
+          tags: kaustu88/techtrends:latest
