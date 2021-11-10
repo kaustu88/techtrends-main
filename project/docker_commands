@@ -1,0 +1,48 @@
+## Docker commands used to build the application 
+
+docker build -t techtrends .
+
+## Docker commands used to run the application
+docker run -d -p 7111:3111 techtrends 
+
+## Docker commands used to get the application logs
+docker logs 402df3dd49d041d69f0ace19611a8d9f8f7c7dbf9c9441e82139faac5f0294ad
+
+## Logs from the container running the TechTrends application
+docker logs 402df3dd49d041d69f0ace19611a8d9f8f7c7dbf9c9441e82139faac5f0294ad
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+[2021-11-10 01:12:20,014] INFO:  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+[2021-11-10 01:12:20,015] INFO:  * Restarting with stat
+[2021-11-10 01:12:20,239] WARNING:  * Debugger is active!
+[2021-11-10 01:12:20,240] INFO:  * Debugger PIN: 170-636-761
+[2021-11-10 01:12:44,430] INFO: Home page request retrieved successfull
+[2021-11-10 01:12:44,453] INFO: 172.17.0.1 - - [10/Nov/2021 01:12:44] "GET / HTTP/1.1" 200 -
+[2021-11-10 01:12:44,508] INFO: 172.17.0.1 - - [10/Nov/2021 01:12:44] "GET /static/css/main.css HTTP/1.1" 200 -
+[2021-11-10 01:12:44,599] INFO: 172.17.0.1 - - [10/Nov/2021 01:12:44] "GET /favicon.ico HTTP/1.1" 404 -
+[2021-11-10 01:12:47,261] INFO: Create page request successfull
+[2021-11-10 01:12:47,269] INFO: 172.17.0.1 - - [10/Nov/2021 01:12:47] "GET /create HTTP/1.1" 200 -
+[2021-11-10 01:13:04,024] INFO: A new article "Welcome" is created!
+[2021-11-10 01:13:04,026] INFO: 172.17.0.1 - - [10/Nov/2021 01:13:04] "POST /create HTTP/1.1" 302 -
+[2021-11-10 01:13:04,037] INFO: Home page request retrieved successfull
+[2021-11-10 01:13:04,039] INFO: 172.17.0.1 - - [10/Nov/2021 01:13:04] "GET / HTTP/1.1" 200 -
+[2021-11-10 01:16:00,595] INFO: Article "2020 CNCF Annual Report" retrieved!
+[2021-11-10 01:16:00,602] INFO: 172.17.0.1 - - [10/Nov/2021 01:16:00] "GET /1 HTTP/1.1" 200 -
+[2021-11-10 01:16:06,257] INFO: About page request retrieved successfull
+[2021-11-10 01:16:06,263] INFO: 172.17.0.1 - - [10/Nov/2021 01:16:06] "GET /about HTTP/1.1" 200 -
+[2021-11-10 01:16:10,518] INFO: Home page request retrieved successfull
+[2021-11-10 01:16:10,520] INFO: 172.17.0.1 - - [10/Nov/2021 01:16:10] "GET / HTTP/1.1" 200 -
+[2021-11-10 01:16:12,274] INFO: Article "Kubernetes v1.20 Release Notes" retrieved!
+[2021-11-10 01:16:12,276] INFO: 172.17.0.1 - - [10/Nov/2021 01:16:12] "GET /3 HTTP/1.1" 200 -
+[2021-11-10 01:16:13,730] INFO: Home page request retrieved successfull
+[2021-11-10 01:16:13,733] INFO: 172.17.0.1 - - [10/Nov/2021 01:16:13] "GET / HTTP/1.1" 200 -
+[2021-11-10 01:16:16,224] INFO: Article "Kubernetes Certification" retrieved!
+[2021-11-10 01:16:16,226] INFO: 172.17.0.1 - - [10/Nov/2021 01:16:16] "GET /6 HTTP/1.1" 200 -
+[2021-11-10 01:16:16,226] INFO: 172.17.0.1 - - [10/Nov/2021 01:16:16] "GET /6 HTTP/1.1" 200 -
+[2021-11-10 01:20:02,207] INFO: Metrics request successfull
+[2021-11-10 01:20:02,208] INFO: 172.17.0.1 - - [10/Nov/2021 01:20:02] "GET /metrics HTTP/1.1" 200 -
+[2021-11-10 01:20:20,043] INFO: Application health request successfull
+[2021-11-10 01:20:20,043] INFO: 172.17.0.1 - - [10/Nov/2021 01:20:20] "GET /healthz HTTP/1.1" 200 -
