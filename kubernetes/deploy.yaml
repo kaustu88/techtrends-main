@@ -17,6 +17,7 @@ spec:
     spec:
       containers:
         - image: k4568/techtrends:latest
+          imagePullPolicy: IfNotPresent
           name: techtrends
           ports:
             - containerPort: 3111
